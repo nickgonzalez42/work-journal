@@ -1,1 +1,22 @@
-User.create!(name: "Nicholas Gonzalez", email: "nick@email.com", password: "password")
+nick = User.create!(name: "Nicholas Gonzalez", email: "nick@email.com", password: "password")
+megan = User.create!(name: "Megan Harsh", email: "megan@email.com", password: "password")
+
+skill1 = Skill.create!(name: "Ruby on Rails", description: "Web building framework", start: "01/01/23", end: "03/31/23", user_id: nick.id)
+skill2 = Skill.create!(name: "React", description: "Frontend framework", start: "02/01/23", end: "03/30/23", user_id: nick.id)
+skill3 = Skill.create!(name: "C++", description: "C language", start: "11/11/22", end: "02/01/23", user_id: megan.id)
+skill4 = Skill.create!(name: "Pandas", description: "Data Analysis tool for Python", start: "01/01/23", end: "03/31/23", user_id: megan.id)
+
+Resource.create!(name: "A book on Ruby on Rails", description: "It's a book", url: "Google.com", start: "01/16/23", end: "01/25/23", skill_id: skill1.id)
+Resource.create!(name: "A website on Ruby on Rails", description: "It's a website", url: "Facebook.com", start: "01/18/23", end: "01/24/23", skill_id: skill1.id)
+Resource.create!(name: "A book on React", description: "It's a book", url: "Gmail.com", start: "02/01/23", end: "02/28/23", skill_id: skill2.id)
+Resource.create!(name: "A wesbite on React", description: "It's a book", url: "Amazon.com", start: "03/02/23", end: "03/25/23", skill_id: skill2.id)
+Resource.create!(name: "A book on C++", description: "It's a book", url: "theverge.com", start: "11/11/22", end: "01/25/23", skill_id: skill3.id)
+Resource.create!(name: "A wesbite on C++", description: "It's a website", url: "politico.com", start: "01/25/23", end: "02/01/23", skill_id: skill3.id)
+Resource.create!(name: "A book on Pandas", description: "It's a book", url: "youtube.com", start: "01/16/23", end: "01/17/23", skill_id: skill4.id)
+Resource.create!(name: "A website on Pandas", description: "It's a website", url: "vox.com", start: "01/16/23", end: "01/17/23", skill_id: skill4.id)
+
+Project.create!(name: "A project using Ruby on Rails", description: "It's a Rails project", url: "github.com", skill_id: skill1.id)
+Project.create!(name: "A project using React", description: "It's a React project", url: "github.com", skill_id: skill2.id)
+Project.create!(name: "A project using C++", description: "It's a C++ project", url: "github.com", skill_id: skill3.id)
+Project.create!(name: "A project using Pandas", description: "It's a Pandas project", url: "github.com", skill_id: skill4.id)
+Project.create!(name: "ANOTHER project using Ruby on Rails", description: "It's a ruby project", url: "github.com", skill_id: skill1.id)
