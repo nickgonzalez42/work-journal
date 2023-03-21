@@ -1,4 +1,11 @@
 class SkillsController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
+
+  def show
+    @skill = Skill.find_by(id: params[:id])
+    render :show
+  end
+
   def index
     @skills = Skill.all
     render :index

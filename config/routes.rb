@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  get "/users/:id" => "users#show"
   post "/users" => "users#create"
+
   post "/sessions" => "sessions#create"
 
-  get "/users/:id" => "users#show"
-
+  get "/skills/:id" => "skills#show"
   get "/skills" => "skills#index"
   post "/skills" => "skills#create"
   patch "/skills/:id" => "skills#update"
