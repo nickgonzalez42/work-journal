@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   patch "/skills/:id" => "skills#update"
   delete "/skills/:id" => "skills#destroy"
 
+  get "/resources/:id" => "resources#show"
   post "/resources" => "resources#create"
   patch "/resources/:id" => "resources#update"
   delete "/resources/:id" => "resources#destroy"

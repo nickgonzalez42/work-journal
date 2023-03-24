@@ -2,11 +2,15 @@ class ProjectsController < ApplicationController
   before_action :authenticate_user
 
   def create
+    response = Cloudinary::Uploader.upload(params[:image_file], resource_type: :auto)
+    cloudinary_url = response["secure_url"]
+
     @project = Project.create!(
       name: params[:name],
       description: params[:description],
       skill_id: params[:skill_id],
       url: params[:url],
+      image: cloudinary_url,
     )
     render :show
   end

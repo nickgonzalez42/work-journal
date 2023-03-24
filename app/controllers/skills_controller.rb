@@ -35,7 +35,18 @@ class SkillsController < ApplicationController
 
   def destroy
     @skill = Skill.find_by(id: params[:id])
+    projects = Project.where(skill_id: @skill.id)
+    resources = Resource.where(skill_id: @skill.id)
+    projects.each do |project|
+      # cloudinary.uploader.destroy(project.image, function(result) { console.log(result) })
+      project.destroy
+    end
+    resources.each do |resource|
+      # cloudinary.uploader.destroy(resource.image, function(result) { console.log(result) })
+      resource.destroy
+    end
     @skill.destroy
+
     render json: { message: "Skill destroyed" }
   end
 end

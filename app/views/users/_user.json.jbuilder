@@ -3,6 +3,9 @@ json.name user.name
 json.email user.email
 # json.skills user.skills
 json.skills user.skills.map do |skill|
+  json.description skill.description
+  json.start skill.start
+  json.end skill.end
   json.user_id skill.user_id
   json.name skill.name
   json.id skill.id

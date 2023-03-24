@@ -1,7 +1,15 @@
 class ResourcesController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user, except: [:show]
+  
+  def show
+    @resource = Resource.find_by(id: params[:id])
+    render :show
+  end
 
   def create
+    response = Cloudinary::Uploader.upload(params[:image_file], resource_type: :auto)
+    cloudinary_url = response["secure_url"]
+
     @resource = Resource.create!(
       name: params[:name],
       description: params[:description],
@@ -9,6 +17,7 @@ class ResourcesController < ApplicationController
       end: params[:end],
       skill_id: params[:skill_id],
       url: params[:url],
+      image: cloudinary_url,
     )
     render :show
   end
