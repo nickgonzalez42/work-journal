@@ -1,5 +1,5 @@
-nick = User.create!(name: "Nicholas Gonzalez", email: "nick@email.com", password: "password")
-megan = User.create!(name: "Megan Harsh", email: "megan@email.com", password: "password")
+nick = User.create!(name: "thisnickg194", email: "nick@email.com", password: "password")
+megan = User.create!(name: "meg0duck", email: "megan@email.com", password: "password")
 
 skill1 = Skill.create!(name: "Angular", description: "A front-end web framework that specializes in single-page applications, Angular uses HTML and TypeScript. The code's readability also allows for easier, faster testing and code review. Angular is an open-source web framework. Since Google developed Angular, users have confidence that they will get long-term support and future versions.", start: "01/01/23", end: "03/31/23", user_id: nick.id)
 skill2 = Skill.create!(name: "jQuery", description: "jQuery helps developers use JavaScript and document object model (DOM) manipulations more easily. The open-source and tested library reduces the amount of code writing needed to manage animations, APIs, and event handling across browsers. This framework can reduce complex operations and functions into single lines of code for leaner and more lightweight development. jQuery can also help enhance a site's search engine optimization and interactivity. You can incorporate jQuery into websites and applications that use older code to improve and maintain various components without redoing the entire application.", start: "02/01/23", end: "03/30/23", user_id: nick.id)

@@ -7,3 +7,4 @@ json.user_id skill.user_id
 json.projects skill.projects
 json.resources skill.resources
 json.user skill.user.name
+json.updated_at skill.updated_at
