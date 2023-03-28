@@ -241,17 +241,17 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/nickgonzalez42/work-journal.svg?style=for-the-badge
 [contributors-url]: https://github.com/nickgonzalez42/work-journal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[forks-shield]: https://img.shields.io/github/forks/nickgonzalez42/work-journal.svg?style=for-the-badge
+[forks-url]: https://github.com/nickgonzalez42/work-journal/network/members
+[stars-shield]: https://img.shields.io/github/stars/nickgonzalez42/work-journal.svg?style=for-the-badge
+[stars-url]: https://github.com/nickgonzalez42/work-journal
+[issues-shield]: https://img.shields.io/github/issues/nickgonzalez42/work-journal.svg?style=for-the-badge
+[issues-url]: https://github.com/nickgonzalez42/work-journal/issues
+[license-shield]: https://img.shields.io/github/license/nickgonzalez42/work-journal.svg?style=for-the-badge
+[license-url]: https://github.com/nickgonzalez42/work-journal/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: [https://linkedin.com/in/othneildrew](https://www.linkedin.com/in/nicholasjgonzalez/)
+[product-screenshot]: https://user-images.githubusercontent.com/41881164/228364068-d97748f5-c339-4769-8b09-ecbaf6471ed2.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
