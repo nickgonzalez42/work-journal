@@ -38,11 +38,11 @@ class SkillsController < ApplicationController
     projects = Project.where(skill_id: @skill.id)
     resources = Resource.where(skill_id: @skill.id)
     projects.each do |project|
-      # cloudinary.uploader.destroy(project.image, function(result) { console.log(result) })
+      Cloudinary::Uploader.destroy(project.image_id, options = {})
       project.destroy
     end
     resources.each do |resource|
-      # cloudinary.uploader.destroy(resource.image, function(result) { console.log(result) })
+      Cloudinary::Uploader.destroy(resource.image_id, options = {})
       resource.destroy
     end
     @skill.destroy

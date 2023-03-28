@@ -9,7 +9,8 @@ class ResourcesController < ApplicationController
   def create
     response = Cloudinary::Uploader.upload(params[:image_file], resource_type: :auto)
     cloudinary_url = response["secure_url"]
-    p params[:image_file]
+    image_id = response["public_id"]
+    p image_id
 
     @resource = Resource.create!(
       name: params[:name],
@@ -19,6 +20,7 @@ class ResourcesController < ApplicationController
       skill_id: params[:skill_id],
       url: params[:url],
       image: cloudinary_url,
+      image_id: image_id,
     )
     render :show
   end
@@ -37,6 +39,7 @@ class ResourcesController < ApplicationController
 
   def destroy
     @resource = Resource.find_by(id: params[:id])
+    Cloudinary::Uploader.destroy(@resource.image_id, options = {})
     @resource.destroy
     render json: { message: "Resource destroyed" }
   end

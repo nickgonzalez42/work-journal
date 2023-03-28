@@ -4,6 +4,7 @@ class ProjectsController < ApplicationController
   def create
     response = Cloudinary::Uploader.upload(params[:image_file], resource_type: :auto)
     cloudinary_url = response["secure_url"]
+    image_id = response["public_id"]
 
     @project = Project.create!(
       name: params[:name],
@@ -11,6 +12,7 @@ class ProjectsController < ApplicationController
       skill_id: params[:skill_id],
       url: params[:url],
       image: cloudinary_url,
+      image_id: image_id,
     )
     render :show
   end
@@ -27,6 +29,7 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project = Project.find_by(id: params[:id])
+    Cloudinary::Uploader.destroy(@project.image_id, options = {})
     @project.destroy
     render json: { message: "Project destroyed" }
   end
