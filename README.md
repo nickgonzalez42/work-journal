@@ -68,7 +68,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -88,11 +87,10 @@ The inspiration for this project came from wishing I could reference something l
 The backend design includes:
 * Users who can signup, login, and logout. All created content is assigned to the active user at creation.
 * Skills that have a start date, end date and description.
-* Resources assigned to a skill that 
+* Resources assigned to a skill that have name, description, url, start, and end date attributes.
+* Projects assigned to a skill that have name, description, and url attributes.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+The Resource and Project models utilize the Cloudinary gem for uploading user provided images. Upon deletion of those models, the images are also deleted in the Cloudinary database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,45 +107,34 @@ Use the `BLANK_README.md` to get started.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You'll need Ruby on Rails installed on your machine, instructions for which can be found here: https://guides.rubyonrails.org/v5.0/getting_started.html
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/nickgonzalez42/work-journal.git
    ```
-3. Install NPM packages
+2. Install gems
    ```sh
-   npm install
+   bundle install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Create your database, run the migrations, and create seeds
+   ```sh
+   rails db:create
+   rails db:migrate
+   rails db:seed
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+5. Run the local server
+   ```sh
+   rails server
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,8 +180,6 @@ Project Link: [https://github.com/nickgonzalez42/work-journal](https://github.co
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [Img Shields](https://shields.io)
