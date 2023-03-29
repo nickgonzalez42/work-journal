@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/nickgonzalez42/work-journal">
+    <img src="https://user-images.githubusercontent.com/41881164/228394475-23fe72ea-59b8-49cd-af91-06d9d5014f9a.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Work Journal Backend</h3>
