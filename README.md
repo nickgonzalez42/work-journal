@@ -38,7 +38,7 @@
   <p align="center">
     A backend API using the Ruby on Rails framework for <!-- TODO turn this into a link --> Work Journal. 
     <br />
-    <a href="https://github.com/nickgonzalez42/work-journal"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nickgonzalez42/work-journal-frontend"><strong>Explore the frontend »</strong></a>
     <br />
     <br />
     <a href="https://github.com/nickgonzalez42/work-journal">View Demo</a>
