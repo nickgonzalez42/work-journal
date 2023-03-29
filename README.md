@@ -41,7 +41,7 @@
     <a href="https://github.com/nickgonzalez42/work-journal-frontend"><strong>Explore the frontend »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nickgonzalez42/work-journal">View Demo</a>
+    <a href="https://youtu.be/sDcnkqT_5Wg">View Demo</a>
     ·
     <a href="https://github.com/nickgonzalez42/work-journal/issues">Report Bug</a>
     ·
