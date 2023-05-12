@@ -81,6 +81,7 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://user-images.githubusercontent.com/41881164/228364068-d97748f5-c339-4769-8b09-ecbaf6471ed2.png" width="50%">
 
 The inspiration for this project came from wishing I could reference something like a "how I learned to code" guide WITHOUT watching a 32-minute YouTube video. Conceptually, this is a website where users can log what resources they used to learn any given skill, how the felt about it, how long it took them, and any projects they completed along the way. 
 
@@ -202,7 +203,7 @@ Project Link: [https://github.com/nickgonzalez42/work-journal](https://github.co
 [license-shield]: https://img.shields.io/github/license/nickgonzalez42/work-journal.svg?style=for-the-badge
 [license-url]: https://github.com/nickgonzalez42/work-journal/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: [https://linkedin.com/in/othneildrew](https://www.linkedin.com/in/nicholasjgonzalez/)
+[linkedin-url]: [https://www.linkedin.com/in/nicholasjgonzalez/](https://www.linkedin.com/in/nicholasjgonzalez/)
 [product-screenshot]: https://user-images.githubusercontent.com/41881164/228364068-d97748f5-c339-4769-8b09-ecbaf6471ed2.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
